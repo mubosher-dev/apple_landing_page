@@ -1,0 +1,43 @@
+.img-modal_section{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: -500%;
+    z-index: 3000;
+    &.active{
+        top: 0;
+    }
+    .img_display{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        img{
+            height: 500px;
+            width: 500px;
+            object-fit: contain;
+        }
+        button{
+            padding:10px 15px;
+            font-size: 17px;
+            cursor: pointer;
+            background: rgb(100,100,255);
+            border: none;
+            outline: none;
+            color: #fff;
+            &:hover{
+                background: brown;
+            }
+        }
+    }
+    .cancel-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,47 @@
+.contact{
+    padding: 100px;
+    .contact-wrapper{
+        padding: 20px;
+        h1{
+            text-align: center;
+            color: rgb(100,100,255);
+        }
+        form{
+            width: 50%;
+            margin: 20px auto;
+            .input-box{
+                margin: 15px 0;
+                .input{
+                    width: 100%;
+                    padding:10px 15px;
+                    border:1px solid rgb(100,100,255);
+                    outline:none;
+                    font-size: 16px;
+                    color:rgb(100,100,255);
+                    &:focus{
+                        box-shadow:0 0 4px 4px rgb(100,80,255);
+                    }
+                }
+                textarea{
+                    height:130px!important;
+                    width:100%!important;
+                }
+            }
+            .btn{
+                padding:10px 15px;
+                display:block;
+                width:100%;
+                border: none;
+                font-size: 16px;
+                outline: none;
+                background:rgb(100,100,255);
+                color: #fff;
+                &:hover{
+                    box-shadow:0 0 4px 4px rgb(100,80,255);
+                    background: #fff;
+                    color: rgb(100,100,255);
+                }
+            }
+        }
+    }
+}

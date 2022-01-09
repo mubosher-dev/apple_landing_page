@@ -1,0 +1,86 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+    background: linear-gradient(10deg,rgb(20,50,155),rgb(30,50,200));
+    .logo{
+        font-size: 30px;
+        color: #fff;
+    }
+    .navigation{
+        .navbar-nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             .nav-item{
+                 margin: 0 15px;
+                 &.active{
+                    a{
+                        color:rgb(179, 178, 178);
+                    }
+                 }
+                .nav-link{
+                    font-size: 17px;
+                    color: #fff;
+                    &:hover{
+                        color:rgb(179, 178, 178);
+                    }
+                }
+            }
+        }
+    }
+   .shops{
+       display: inline-block;
+        .shop_item{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            position: relative;
+            i{
+                font-size: 20px;
+                color: #fff;
+                cursor: pointer;
+            }
+            .index{
+                align-self:center;
+                font-size: 16px;
+                height: 30px;
+                width: 30px;
+                text-align:center;
+                background: #fff;
+                color: rgb(100,100,255);
+                border-radius: 50%;
+                position:absolute;
+                bottom: -73%;
+                right: -92%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+   }
+   .bars{
+       width: 30px;
+       height: 30px;
+       display: none;
+       justify-content: center;
+       align-items: center;
+        #navBtn{
+            display: block;
+            width: 100px;
+            height: 100%;
+            font: size 16px;
+            background:yellow;
+            cursor: pointer;
+            color:#ff0000;
+            border: none;
+            &:focus{
+                border:1px solid black;
+            }
+        }       
+   }
+}

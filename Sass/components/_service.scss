@@ -1,0 +1,80 @@
+.service{
+    padding: 100px;
+    .service-wrapper{
+        h1{
+            color: rgb(100,100,255);
+            text-align: center!important;
+        }
+        .service-item_display{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .service-item{
+                padding: 30px!important;
+                &:hover{
+                    background:#000;
+                    .desc{
+                        h3,p,h2{
+                            color:white;
+                        }
+                        h2{
+                            .line{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .ser-img{
+                    width: 100%;
+                    height: 200px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .desc{
+                    padding:20px 0;
+                    h3{
+                        font-size: 20px;
+                        color: rgb(100,100,255);
+                    }
+                    p{
+                        margin: 10px 0;
+                        font-size:16px;
+                        color: rgb(172, 166, 166);
+                    }
+                    h2{
+                        color:rgb(100,100,255);
+                        .price{
+                            margin-right: 5px;
+                            text-decoration: none;
+                            font-size:20px;
+                        }
+                        .line{
+                            text-decoration: line-through;
+                            font-size: 16px;
+                            color:#000000;
+                        }
+                    }
+                    .addCartBtn{
+                        padding: 10px 15px;
+                        display: block;
+                        width: 100%;
+                        background: rgb(100,100,255);
+                        color: #fff;
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer!important;
+                        &:hover{
+                            background: #fff;
+                            box-shadow: 0 0 5px rgb(100,100,255);
+                            color: rgb(100,100,255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
